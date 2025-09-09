@@ -16,28 +16,36 @@
         <h1>Piedra, papel o tijera</h1>
         <div class="vs">
             <div class="opcionUser">
-                <img src="./images/palm.png" alt="opcion Usuario">
+                <img src="./images/palm.png" alt="opcion Usuario"
+                id="opcionUsuario">
             </div>
             <div class="opcionMaquina">
-                <img src="./images/punch.png" alt="Opcion Maquina">
+                <img src="./images/punch.png" alt="Opcion Maquina" id="opcionMaquina">
             </div>
+        </div>
+        <div class="marcador">
+            <p class="marcadorUno" id="marcadorUno">0</p>
+            -
+            <p class="marcadorDos" id="marcadorDos">0</p>
         </div>
         <h2>Elige uno!</h2>
         <div class="opciones">
-            <button class="piedra">
+            <button class="piedra" id="piedra" onclick="cambiarImagen('./images/punch.png')">
                 <img src="./images/punch.png" alt="Piedra">
             </button>
-            <button class="papel">
+            <button class="papel" id="papel" onclick="cambiarImagen('./images/palm.png')">
                 <img src="./images/palm.png" alt="papel">
             </button>
-            <button class="tijera">
+            <button class="tijera" id="tijera"  onclick="cambiarImagen('./images/scissors.png')" >
                 <img src="./images/scissors.png" alt="tijera">
             </button>
         </div>
 
     </main>
     <footer>
-        <p>Creado con amor por Mario P</p>
+        <p>Creado con amor por <span style="color: rgb(47, 47, 196);">Mario P</span></p>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>

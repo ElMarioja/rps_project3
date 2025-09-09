@@ -16,9 +16,10 @@
 
 
 main{
-    background-image: url("https://images.unsplash.com/photo-1603484477859-abe6a73f9366?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+   
     background-size: cover;
     height: 95vh;
+    background-color: white;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -47,7 +48,7 @@ h2{
 }
 
 main .vs img{
-    width: 45vh;
+    width: 37vh;
 }
 
 main .opciones{
@@ -55,6 +56,21 @@ main .opciones{
     justify-content: center;
     gap: 30px;
     height: 20vh;
+}
+
+.marcador{
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.marcador .marcadorUno{
+   color: blue;
+}
+
+.marcador .marcadorDos{
+   color: red;
 }
 
 main .opciones button{
@@ -72,10 +88,42 @@ main .opciones button  img{
 }
 
 main .opciones button:hover{
-   background-color: beige;
+   background-color: rgb(247, 119, 119);
    transform: scale(1.1);
    transition: ease-in-out 10;
+}
 
+main .opciones .piedra:hover{
+   background-color: rgb(247, 119, 119);
+}
+
+main .opciones .papel:hover{
+   background-color: rgb(239, 231, 119);
+}
+
+main .opciones .tijera:hover{
+   background-color: rgb(118, 150, 246);
+}
+
+main .opciones .piedra:active{
+   background-color: rgb(255, 0, 0);
+   transition: ease-in-out 10;
+}
+
+main .opciones .papel:active{
+   background-color: rgb(255, 238, 0);
+   transition: ease-in-out 10;
+}
+
+main .opciones .tijera:active{
+   background-color: rgb(0, 64, 255);
+   transition: ease-in-out 10;
+}
+
+main .opciones button:active{
+   background-color: gray;
+
+   transition: ease-in-out 10;
 }
 
 footer{
